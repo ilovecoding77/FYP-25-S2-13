@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+    width: 300px;
+    padding: 10px;
+  }
+  
+  .popup-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .icons button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .logo img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .logoName {
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+  }
+  
+  .icons button img {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0);
+  }
+  
+
+  .onoff {
+    width: 24px;
+    height: 24px;
+    color: black;
+  }
+
+  .setting {
+    width: 24px;
+    height: 24px;
+    color: black;
+  }
+  
+  .score {
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  .vulnerabilities-section {
+    border: 1px solid #ccc;
+    padding: 5px;
+    max-height: 80px;
+    overflow-y: auto;
+  }
+  
+  .graph-section {
+    border: 1px solid #ccc;
+    height: 100px;
+    text-align: center;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+  }
+  
+  .button-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .button-wrapper button {
+    border-radius: 20px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
