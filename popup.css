@@ -106,3 +106,73 @@ body {
     font-size: 14px;
   }
   
+  .url-container {
+    font-size: 0.75em;
+    color: #666;
+    margin-bottom: 0.5em;
+  }
+  .url-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 240px;
+  }
+  /*footer buttons*/
+  #scan-now {
+  transition: transform 0.15s ease-in-out;
+  }
+
+  #scan-now:active {
+  transform: scale(0.9);
+  }
+
+  #share {
+  transition: transform 0.15s ease-in-out;
+  }
+
+  #share:active {
+  transform: scale(0.9);
+  }
+
+  #latest {
+  transition: transform 0.15s ease-in-out;
+  }
+
+  #latest:active {
+  transform: scale(0.9);
+  }
+ /*detail*/
+.detail-item {
+  margin-bottom: 12px;
+  font-size: 13px;
+  padding: 4px 0;
+}
+
+.detail-btn {
+  margin-left: 8px;
+  font-size: 12px;
+  padding: 2px 6px;
+  cursor: pointer;
+}
+/*OnOff*/
+.icons #onoff {
+  background: none;
+  border: none;
+  padding: 4px;
+  margin-left: 8px;
+  cursor: pointer;
+  transition: filter 0.2s ease, opacity 0.2s ease;
+}
+
+.icons #onoff img {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+.icons #onoff.off {
+  opacity: 0.6;
+}
+.icons #onoff.off img {
+  filter: grayscale(100%);
+}
