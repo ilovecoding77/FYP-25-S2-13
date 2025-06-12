@@ -1,0 +1,68 @@
+---
+// src/pages/index.astro
+---
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>VulnEye – Browser Security Inspector</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+	<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">
+        <img src="/logo.png" alt="VulnEye Logo" class="logo-img" />
+        <span>VULNEYE</span>
+      </div>
+      <nav>
+        <a href="#features">Features</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>Client-Side Security, Simplified</h1>
+        <p>Real-time in-browser vulnerability scanning with zero data leakage.</p>
+        <button disabled>Coming Soon</button>
+      </section>
+
+     <section id="features" class="features content-box">
+  <h2>Key Features</h2>
+  <ul>
+    <li>🔍 Detects XSS, CSRF, and header misconfigs</li>
+    <li>🧠 Suspicious site detection using ML</li>
+    <li>🔐 Fully privacy-first, no data leaves your browser</li>
+  </ul>
+</section>
+
+<section id="faq" class="faq content-box">
+  <h2>FAQ</h2>
+  <p><strong>Is VulnEye free?</strong><br />Yes, a free tier will always be available.</p>
+  <p><strong>Does it work on all browsers?</strong><br />VulnEye is being designed for Chrome, Edge, and Firefox.</p>
+</section>
+
+<section id="contact" class="contact content-box">
+  <h2>Contact</h2>
+  <p>Need help? Reach out at <a href="mailto:support@vulneye.app">support@vulneye.app</a></p>
+</section>
+
+    </main>
+
+	<section class="privacy">
+  <h2>Privacy Policy</h2>
+  <p>VulnEye does not collect, store, or transmit any user data.</p>
+  <p>All security scans are performed locally within your browser and no information ever leaves your device.</p>
+  <p>We do not use cookies, analytics, or third-party trackers on this site.</p>
+  <p>For any questions, contact <a href="mailto:support@vulneye.app">support@vulneye.app</a></p>
+</section>
+
+
+    <footer>
+      <p>© 2025 VulnEye – All rights reserved.</p>
+    </footer>
+  </body>
+</html>
