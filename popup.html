@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Extension Popup</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="header">
+    <button class="logo" id="menuButton">
+      <img src="icons/icon128.png" alt="logo" class="logoIcon" />
+      <span class="logoName">VULNEYE</span>
+      <img src="icons/rightarrow.png" alt="right" class="rightArrow" />
+    </button>
+    <div class="icons">
+      <button id="onoff">
+        <img src="icons/onoffs.png" alt="Toggle" class="offon" />
+      </button>
+      <button id="setting">
+        <img src="icons/settings.png" alt="Settings" class="setting" />
+      </button>
+    </div>
+  </div>
+
+  <div class="dropdown-menu" id="dropdownMenu">
+    <button class="dropdownItem">
+      <img src="icons/share.png" class="dropdown-icon" /> Share
+    </button>
+    <button class="dropdownItem">
+      <img src="icons/export.png" class="dropdown-icon" /> Export
+    </button>
+  </div>
+
+  <div class="dropdown-menu2" id="dropdownMenu2">
+    <button class="dropdownItem">
+      <img src="icons/profile.png" class="dropdown-icon" /> Profile
+    </button>
+    <button class="dropdownItem">
+      <img src="icons/history.png" class="dropdown-icon" /> Scan History
+    </button>
+    <button class="dropdownItem">
+      <img src="icons/upgrade.png" class="dropdown-icon" /> Upgrade Plan
+    </button>
+    <button class="dropdownItem">
+      <img src="icons/help.png" class="dropdown-icon" /> Help Center
+    </button>
+    <button class="dropdownItem" id="appSetting">
+      <img src="icons/wrench.png" class="dropdown-icon" /> Settings
+    </button>
+    <button class="dropdownItem">
+      <img src="icons/logout.png" class="dropdown-icon" /> Logout
+    </button>
+  </div>
+
+  <div class="body-container">
+    <div class="body1">
+      <div class="popup-container">
+        <div class="main-content">
+          <div class="date-container">
+            <small>Date: <span id="current-date"></span></small>
+          </div>
+          <div class="url-container">
+            <small>URL Scanned: <span id="current-url" class="url-text">Loading…</span></small>
+          </div>
+          <div class="plan-container">
+            <small>Plan: Free</small>
+          </div>
+
+          <div class="score">
+            <h3><img src="icons/score.png" alt="score" />Score</h3>
+            <div id="score-value">--</div>
+          </div>
+
+          <div class="vulnerabilities-section">
+            <h4>List of vulnerabilities</h4>
+            <ul id="vulnerability-list"></ul>
+          </div>
+
+          <div class="graph-section">
+            <canvas id="graphCanvas" width="200" height="100"></canvas>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="button-wrapper">
+          <button id="scan-now">SCAN LATEST LINK</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="body2">
+      <div class="noise-content">
+        <button id="onoff2">
+          <img src="icons/onoff2.png" alt="Toggle" class="offon2" />
+        </button>
+      </div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
